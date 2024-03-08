@@ -4,6 +4,16 @@
 
 This program automates the process of creating bug samples in Unity scenes under the High Definition Render Pipeline (HDRP) using the Perception Package. It captures bug instances and records them for analysis.
 
+## Requirements
+
+### Import Package by Name:
+- `com.unity.render-pipelines.high-definition`
+- `com.unity.perception`
+
+### Import Package by URL:
+- [AutoLOD](https://github.com/Unity-Technologies/AutoLOD.git)
+- [UnityMeshSimplifier](https://github.com/Whinarn/UnityMeshSimplifier.git)
+
 ## Installation and Setup
 
 1. **Import Scene**: Import the scene into the project and ensure it supports HDRP rendering.
@@ -28,3 +38,5 @@ This program automates the process of creating bug samples in Unity scenes under
 
 10. **Optional Manual Filtering**: Utilize `picViewer.py` to view and manually filter samples located in `[out/]`.
 
+## Note
+- This sample scene doesn't work well with the program. For all the bug controllers to work normally, each item's collider and renderer should not be separated into two objects.
